@@ -1,0 +1,34 @@
+115a1f6d22de37bbbf42304552b42fcb722ffbc8
+1f7c55b3fe87b332bb047f050cc528bd7cebeaba
+03a0263cffd9deccd415fb98fd7ab8f78f943d71 
+f721f3bb0d39caa78e07a0997fdf816fe516efa4 
+3fae67d552a549f0e7df71762444a3f7fe339331 Desktop
+c7f28b6c4cd3eea2b16022473e5d2fe94d7f5681 Desktop
+79bb0d27d4e27345c3339bd0c1fb9a25413584b7 Desktop/bt-salahdine.com
+cb3b0b26748a432492244f5a68939d0132c09e1c Desktop/bt-salahdine.com
+c20fe9b2d4e324a34702ce4972f7c7d10b907ebb Desktop/bt-salahdine.com/images
+0602ed996c0241f4e16ef446d327dbd3b55cbe0d Desktop/bt-salahdine.com/images/control-system.jpg.jpg
+38e6cacc1fd57fde8b37c37486b91e9a5c40bf4a Desktop/bt-salahdine.com/images/profile.png
+d364499045999d2cf1e5c263138f60d287fac1b4 Desktop/bt-salahdine.com/index.html
+913ca906610ac6266c4172505b7cc0697971f25e Desktop/bt-salahdine.com/project
+f5a61c11f496483b50fe6df214a32e3a1f056d95 Desktop/bt-salahdine.com/project
+d872d5986150e89e517fa199fb07d0a364fbbdea Desktop/bt-salahdine.com/project/control-pump.html
+275622eb17a211b87222395d70aaf91d99d3fd0a Desktop/bt-salahdine.com/project/images_project
+9bb133f3b0b95ad82762bc57c834872be29195a0 Desktop/bt-salahdine.com/project/images_project/12+9
+b7fb27520de388be54527d22518bce813025765d Desktop/bt-salahdine.com/project/images_project/2.jpg
+398b9ba03fb26ee0ceb6a65b8b74e3ff95783e7d Desktop/bt-salahdine.com/project/images_project/ChatGPT Image 19 أغسطس 2025، 09_56_20 م.png
+d2162ea1d7183c840943f121e11442c2c2e2232f Desktop/bt-salahdine.com/project/images_project/circuit-diagram.jpg
+3380afa8ab0816d95117b082130f7aae9373fa07 Desktop/bt-salahdine.com/project/images_project/circuit-diagram.png
+48aa6dc083b96879909a7af9c5178e5ddde85466 Desktop/bt-salahdine.com/project/images_project/circuit-diagram_pice.png
+05e6e17337c1173bb78e8cf6357df68b10ce28c9 Desktop/bt-salahdine.com/project/images_project/diagram.jpg
+7f78f6343076df4b416aacf4bbe175d2fc267fa3 Desktop/bt-salahdine.com/project/images_project/photo_2023-05-31_01-43-23.jpg
+a0ab0b2f0b3015c904a302a3ce6f9df9f1a9e8d6 Desktop/bt-salahdine.com/project/images_project/photo_2023-05-31_01-43-46.jpg
+a5023d47148a4e204d6eb0bfe6075a7768b451b6 Desktop/bt-salahdine.com/project/images_project/photo_2023-05-31_01-44-12.jpg
+6e53a6844b2150d0e4def7350d1090985ca1b93d Desktop/bt-salahdine.com/project/images_project/photo_2023-05-31_01-44-38.jpg
+4205c431a00eb8ca75b0b1639061715bbcc7b28e Desktop/bt-salahdine.com/project/images_project/photo_2023-05-31_01-45-10.jpg
+9167c11efe6b321def38e9e953e3449a77df3c2b Desktop/bt-salahdine.com/project/images_project/photo_2023-05-31_01-45-52 (2).jpg
+2ed06e73236a1a83716fc1e626f67a94419eabb8 Desktop/bt-salahdine.com/project/solar-pump.html
+ffc3bf95a44004036673baafce90bdad604799cc Desktop/bt-salahdine.com/project/video
+3564984c35686dc60a5cc41785c8c8d81f40f01d Desktop/bt-salahdine.com/project/video/project.mp4
+b479f0aa64c4f9e06cde710113badf2afd666da7 Desktop/bt-salahdine.com/script.js
+6e3879f4a59471fdad8eff13ebcd5df6d29e9f92 Desktop/bt-salahdine.com/styles.css

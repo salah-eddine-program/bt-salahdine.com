@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام التحكم في مضخات المياه عن بعد - صلاح الدين بن التواتي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--primary-color) 100%);
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            color: var(--text-light);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-demo {
+            background: var(--bg-light);
+            padding: 4rem 0;
+        }
+        
+        .demo-interface {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pump-control {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .pump-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .pump-card.active {
+            border-color: var(--accent-color);
+            background: #ecfdf5;
+        }
+        
+        .pump-status {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .pump-status.on {
+            background: var(--accent-color);
+            animation: pulse-green 2s infinite;
+        }
+        
+        .pump-status.off {
+            background: #64748b;
+        }
+        
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        
+        .control-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .control-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .system-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .components-section {
+            background: white;
+            padding: 4rem 0;
+        }
+        
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .component-card {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .circuit-diagram {
+            max-width: 100%;
+            height: 400px;
+            background: #1e293b;
+            border-radius: 15px;
+            margin: 2rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .achievements {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            padding: 4rem 0;
+        }
+        
+        .medal {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .medal i {
+            font-size: 4rem;
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>صلاح الدين بن التواتي</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="#demo" class="nav-link">العرض التوضيحي</a></li>
+                <li><a href="#components" class="nav-link">المكونات</a></li>
+                <li><a href="#achievements" class="nav-link">الإنجازات</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">نظام التحكم في مضخات المياه عن بعد</h1>
+                <p class="hero-subtitle">التحكم الذكي عبر الاتصال الهاتفي باستخدام Arduino و GSM</p>
+                <div class="hero-description">
+                    <p>نظام متطور للتحكم في مضخات المياه عن بعد عبر الاتصال الهاتفي دون الحاجة للانتقال، مع استخدام لوحة تحكم Arduino ووحدة GSM للاتصال اللاسلكي.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">جرب العرض التوضيحي</a>
+                    <a href="#components" class="btn btn-secondary">تفاصيل التقنية</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="project-demo">
+        <div class="container">
+            <h2 class="section-title">العرض التوضيحي التفاعلي</h2>
+            <div class="demo-interface">
+                <h3>لوحة التحكم الرئيسية</h3>
+                <div class="pump-control">
+                    <div class="pump-card" id="pump1">
+                        <div class="pump-status off">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h4>مضخة المياه الرئيسية</h4>
+                        <p>حالة: <span class="status-text">متوقفة</span></p>
+                        <button class="control-btn" onclick="togglePump('pump1')">تشغيل</button>
+                    </div>
+                    
+                    <div class="pump-card" id="pump2">
+                        <div class="pump-status off">
+                            <i class="fas fa-shower"></i>
+                        </div>
+                        <h4>مضخة التوزيع</h4>
+                        <p>حالة: <span class="status-text">متوقفة</span></p>
+                        <button class="control-btn" onclick="togglePump('pump2')">تشغيل</button>
+                    </div>
+                    
+                    <div class="pump-card" id="pump3">
+                        <div class="pump-status off">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>مضخة الري</h4>
+                        <p>حالة: <span class="status-text">متوقفة</span></p>
+                        <button class="control-btn" onclick="togglePump('pump3')">تشغيل</button>
+                    </div>
+                </div>
+                
+                <div class="system-stats">
+                    <div class="stat-card">
+                        <h4>ضغط المياه</h4>
+                        <p id="pressure">2.5 بار</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>مستوى الخزان</h4>
+                        <p id="tank-level">75%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>استهلاك الطاقة</h4>
+                        <p id="power-consumption">1.2 كيلوواط</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>درجة الحرارة</h4>
+                        <p id="temperature">28°م</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components-section">
+        <div class="container">
+            <h2 class="section-title">المكونات التقنية</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <i class="fas fa-microchip" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Arduino Uno</h3>
+                    <p>وحدة التحكم المركزية المسؤولة عن معالجة الإشارات والتحكم في المضخات</p>
+                </div>
+                
+                <div class="component-card">
+                    <i class="fas fa-signal" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                    <h3>وحدة GSM</h3>
+                    <p>للاتصال اللاسلكي وإرسال الأوامر عبر الشبكة الخلوية</p>
+                </div>
+                
+                <div class="component-card">
+                    <i class="fas fa-plug" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                    <h3>دوائر الترحيل (Relays)</h3>
+                    <p>للتحكم في تشغيل وإيقاف المضخات بأمان</p>
+                </div>
+                
+
+
+            <div class="circuit-diagram" style="background: #1e293b; border-radius: 15px; margin: 2rem auto; padding: 2rem; text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;"> مكونات المشروع </h3>
+                <img src="images_project/circuit-diagram_pice.png" 
+                    alt="مخطط الدائرة الإلكترونية"
+                    style="display: block; margin: 0 auto; width: 100%; height: 100%; max-height: 400px; border-radius: 15px; object-fit: contain;">
+            </div>
+
+
+
+
+
+            <div class="circuit-diagram" style="background: #1e293b; border-radius: 15px; margin: 2rem auto; padding: 2rem; text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">مخطط الدائرة الإلكترونية</h3>
+                <img src="images_project/circuit-diagram.png" 
+                    alt="مخطط الدائرة الإلكترونية"
+                    style="display: block; margin: 0 auto; width: 100%; height: 100%; max-height: 400px; border-radius: 15px; object-fit: contain;">
+            </div>
+
+
+
+
+            <div class="circuit-diagram" style="background: #1e293b; border-radius: 15px; margin: 2rem auto; padding: 2rem; text-align: center; width: 95%; max-width: 1200px;">
+                <h3 style="color: white; margin-bottom: 1rem;">فيديو لعمل المشروع</h3>
+                
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px;">
+                    <iframe 
+                        src="https://drive.google.com/file/d/1lpgaqf1lnEDblQH0mXIQn9WetwWa6JGJ/preview" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">الإنجازات والجوائز</h2>
+            <div class="medal">
+                <i class="fas fa-medal"></i>
+                <h3>المركز الثاني</h3>
+                <p>مسابقة الجامعة للمشاريع التقنية 2022</p>
+                <p>جامعة قاصدي مرباح ورقلة</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <h3>الميزات الرئيسية للمشروع:</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <i class="fas fa-phone" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                        <h4>التحكم الهاتفي</h4>
+                        <p>إمكانية التحكم عبر المكالمات الهاتفية</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-wifi" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                        <h4>اتصال لاسلكي</h4>
+                        <p>عمل النظام عبر شبكة GSM بدون حاجة للإنترنت</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                        <h4>نظام حماية</h4>
+                        <p>حماية من التشغيل الخاطئ والأحمال الزائدة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 الدين صلاح الدين بن التواتي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
