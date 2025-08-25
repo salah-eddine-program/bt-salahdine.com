@@ -995,3 +995,3232 @@ section {
         padding: 1rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   تحسين قابلية القراءة للنص العربي    الخاصة بالتربصات*/
+.experience-section {
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.experience-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experience-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    border-right: 4px solid #007bff;
+    margin-bottom: 20px;
+}
+
+.experience-details h4 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+.experience-details .company {
+    font-size: 1.1rem;
+    color: #3498db;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.experience-details .period {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-weight: 500;
+    background: #e8f4f8;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+
+.experience-details .description {
+    font-size: 1.05rem;
+    color: #34495e;
+    line-height: 2;
+    text-align: justify;
+    margin: 0;
+    padding: 15px 0;
+    word-spacing: 2px;
+    text-indent: 20px;
+}
+
+/* تحسين المسافات على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 15px;
+    }
+    
+    .experience-card {
+        padding: 20px 15px;
+    }
+    
+    .experience-details h4 {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+    
+    .experience-details .description {
+        font-size: 1rem;
+        line-height: 1.9;
+        text-indent: 15px;
+    }
+}
+
+/* إضافة خط Google Fonts للعربية */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تحسين قابلية القراءة لقسم التعليم */
+.education {
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.education .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* تحسين Timeline */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #3498db, #2c3e50);
+    transform: translateX(50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    padding: 25px 30px;
+    margin-right: 60px;
+    border-right: 4px solid #3498db;
+}
+
+.timeline-item:nth-child(even) {
+    margin-right: 0;
+    margin-left: 60px;
+    border-right: none;
+    border-left: 4px solid #e74c3c;
+}
+
+.timeline-icon {
+    position: absolute;
+    right: -45px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+    right: auto;
+    left: -45px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+.timeline-content .institution {
+    font-size: 1.15rem;
+    color: #3498db;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.timeline-content .period {
+    font-size: 1rem;
+    color: #7f8c8d;
+    background: #ecf0f1;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.timeline-content .location,
+.timeline-content .specialty,
+.timeline-content .description {
+    font-size: 1.05rem;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* تحسين الإنجازات */
+.achievements {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-right: 3px solid #27ae60;
+}
+
+.achievements h4 {
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li {
+    font-size: 1.05rem;
+    color: #2c3e50;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    position: relative;
+    padding-right: 25px;
+}
+
+.achievements li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* تحسين المهارات التقنية */
+.technical-skills-section {
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.skills-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-top: 4px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .timeline::before {
+        right: 30px;
+    }
+    
+    .timeline-item {
+        margin-right: 0;
+        margin-left: 70px;
+        padding: 20px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-right: 0;
+        margin-left: 70px;
+    }
+    
+    .timeline-icon {
+        right: -45px;
+        left: auto;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-icon {
+        right: -45px;
+        left: auto;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .education .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تحسين قابلية القراءة لقسم المشاريع */
+.projects {
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f4 100%);
+}
+
+.projects .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    font-weight: bold;
+    position: relative;
+}
+
+.projects .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #e74c3c);
+    border-radius: 2px;
+}
+
+/* تحسين شبكة المشاريع */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* تحسين بطاقات المشاريع */
+.project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* تحسين صورة المشروع */
+.project-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(231, 76, 60, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay i {
+    color: white;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* تحسين محتوى المشروع */
+.project-content {
+    padding: 30px 25px;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #5a6c7d;
+    line-height: 2;
+    margin-bottom: 25px;
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 1px;
+}
+
+/* تحسين علامات التقنيات */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 80px;
+}
+
+.tech-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.tech-tag:nth-child(even) {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.tech-tag:nth-child(even):hover {
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+/* تحسين الجوائز */
+.project-award {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+.project-award i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* تحسين روابط المشروع */
+.project-links {
+    text-align: center;
+}
+
+.project-links .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.project-links .btn:hover {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(39, 174, 96, 0.3);
+}
+
+/* تأثيرات إضافية */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.project-card:hover::before {
+    left: 100%;
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .projects {
+        padding: 60px 0;
+    }
+    
+    .projects .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .project-card {
+        border-radius: 15px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    .project-content {
+        padding: 25px 20px;
+    }
+    
+    .project-content h3 {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    
+    .project-description {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-indent: 10px;
+    }
+    
+    .project-tech {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    
+    .tech-tag {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        min-width: 70px;
+    }
+    
+    .project-award {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .project-award i {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    
+    .project-links .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تحسين قسم التواصل */
+.contact {
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+.contact .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    border-radius: 2px;
+}
+
+/* تحسين محتوى التواصل */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* تحسين معلومات التواصل */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+    flex-shrink: 0;
+}
+
+.contact-details h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #f8f9fa;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e8f4f8;
+    margin: 0;
+}
+
+/* تحسين أرقام الهاتف */
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phone-number {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.phone-label {
+    font-size: 0.95rem;
+    color: #bdc3c7;
+    font-weight: 500;
+}
+
+.phone-value {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.work-status {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+    color: white !important;
+    box-shadow: 0 3px 10px rgba(39, 174, 96, 0.3);
+}
+
+/* تحسين النموذج */
+.contact-form {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.form-header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.7;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    background: white;
+    color: #2c3e50;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.2);
+    transform: translateY(-2px);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.8;
+}
+
+.contact-form .btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+.contact-form .btn:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+}
+
+/* تحسين الروابط الاجتماعية */
+.social-links {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.social-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.social-link i {
+    font-size: 1.8rem;
+}
+
+.social-link span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.social-link.email:hover {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.social-link.phone:hover {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.social-link.linkedin:hover {
+    background: linear-gradient(135deg, #0077b5, #005885);
+}
+
+.social-link.github:hover {
+    background: linear-gradient(135deg, #333, #24292e);
+}
+
+/* تحسين الفوتر */
+.footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 40px 0 20px;
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.footer-main p {
+    font-size: 1rem;
+    color: #bdc3c7;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    line-height: 1.6;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #95a5a6;
+}
+
+.made-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.made-with i {
+    color: #e74c3c;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 50%, 100% {
+        transform: scale(1);
+    }
+    25%, 75% {
+        transform: scale(1.1);
+    }
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .contact .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 15px;
+    }
+    
+    .contact-item {
+        padding: 20px 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .contact-form {
+        padding: 25px 20px;
+    }
+    
+    .form-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .social-link {
+        flex-direction: row;
+        min-width: 200px;
+        justify-content: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-content {
+        padding: 0 10px;
+    }
+    
+    .contact-form {
+        padding: 20px 15px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+    
+    .phone-number {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تحسين قسم نبذة عني */
+.about {
+    font-family: 'Amiri', 'Arial', 'Tahoma', sans-serif;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f4 100%);
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(52, 152, 219, 0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23dots)"/></svg>');
+    opacity: 0.3;
+}
+
+.about .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    font-weight: bold;
+    position: relative;
+}
+
+.about .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #e74c3c);
+    border-radius: 2px;
+}
+
+/* تحسين محتوى النبذة */
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.text-wrapper {
+    background: white;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.text-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #e74c3c, #f39c12, #27ae60);
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    line-height: 2.2;
+    margin-bottom: 35px;
+    text-align: justify;
+    text-indent: 20px;
+    word-spacing: 2px;
+    position: relative;
+}
+
+/* إحصائيات مميزة */
+.highlight-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    border-top: 3px solid #3498db;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.2);
+}
+
+.stat-item:nth-child(2) {
+    border-top-color: #e74c3c;
+}
+
+.stat-item:nth-child(3) {
+    border-top-color: #f39c12;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* تحسين قسم المهارات */
+.skills-section {
+    margin-bottom: 60px;
+}
+
+.skills-main-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-weight: bold;
+    position: relative;
+}
+
+.skills-main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    border-radius: 2px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s;
+}
+
+.skill-card:hover::before {
+    left: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-card:nth-child(2) .skill-icon {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+}
+
+.skill-card:nth-child(3) .skill-icon {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
+}
+
+.skill-card:nth-child(4) .skill-icon {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.3);
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotateY(360deg);
+}
+
+.skill-card h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.skill-card p {
+    font-size: 1.05rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.skill-badge {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.skill-card:nth-child(2) .skill-badge {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.skill-card:nth-child(3) .skill-badge {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.skill-card:nth-child(4) .skill-badge {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+/* تحسين قسم لغات البرمجة */
+.languages-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.languages-title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-weight: bold;
+    position: relative;
+}
+
+.languages-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
+    border-radius: 2px;
+}
+
+.languages-grid {
+    display: grid;
+    gap: 25px;
+}
+
+.language-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-right: 4px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+.language-item:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.language-item:nth-child(2) {
+    border-right-color: #e74c3c;
+}
+
+.language-item:nth-child(3) {
+    border-right-color: #f39c12;
+}
+
+.language-item:nth-child(4) {
+    border-right-color: #27ae60;
+}
+
+.language-item:nth-child(5) {
+    border-right-color: #9b59b6;
+}
+
+.language-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.language-name {
+    font-size: 1.15rem;
+    color: #2c3e50;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.language-percentage {
+    font-size: 1.1rem;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.progress {
+    background: #ecf0f1;
+    border-radius: 25px;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 25px;
+    transition: width 2s ease-in-out;
+    position: relative;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.progress-bar.cpp {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.progress-bar.arduino {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.progress-bar.python {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.progress-bar.java {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.progress-bar.php {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 0;
+    }
+    
+    .about .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .text-wrapper {
+        padding: 30px 25px;
+    }
+    
+    .intro-text {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        text-indent: 15px;
+    }
+    
+    .highlight-stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .stat-item {
+        min-width: 200px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .skill-card {
+        padding: 25px 20px;
+    }
+    
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .languages-section {
+        padding: 0 15px;
+    }
+    
+    .language-item {
+        padding: 20px;
+    }
+    
+    .language-name {
+        font-size: 1rem;
+    }
+    
+    .language-percentage {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        padding: 0 10px;
+    }
+    
+    .text-wrapper {
+        padding: 25px 20px;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-indent: 10px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .skill-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skill-card p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .language-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* تحريك أشرطة التقدم عند التحميل */
+@keyframes loadProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--target-width);
+    }
+}
+
+.progress-bar {
+    animation: loadProgress 2s ease-out forwards;
+}
