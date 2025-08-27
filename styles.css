@@ -4224,3 +4224,1347 @@ section {
 .progress-bar {
     animation: loadProgress 2s ease-out forwards;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* زر تحميل السيرة الذاتية */
+.btn-cv {
+    position: relative;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    transform: translateY(0);
+}
+
+.btn-cv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.btn-cv:active {
+    transform: translateY(-1px);
+    transition: all 0.1s;
+}
+
+/* تأثير اللمعان */
+.btn-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s;
+}
+
+.btn-cv:hover .btn-shine {
+    left: 100%;
+}
+
+/* أيقونة التحميل */
+.btn-cv i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.btn-cv:hover i {
+    transform: translateY(2px);
+    animation: bounce 0.6s ease infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(4px); }
+}
+
+/* نص الزر */
+.btn-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* تأثير النبضة */
+.btn-cv::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-cv:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .btn-cv {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+/* تحسين تخطيط الأزرار */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* تأثير إضافي للتركيز */
+.btn-cv:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.4);
+}
+
+/* تأثير التحميل */
+.btn-cv.downloading {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.btn-cv.downloading i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* إشعار التحميل */
+.download-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(76, 175, 80, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10000;
+    font-weight: 500;
+}
+
+.download-notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.download-notification i {
+    font-size: 18px;
+}
+
+/* تصميم متجاوب للإشعار */
+@media (max-width: 768px) {
+    .download-notification {
+        right: 10px;
+        left: 10px;
+        transform: translateY(-100%);
+    }
+    
+    .download-notification.show {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تحسين تخطيط المهارات التقنية */
+.technical-skills-section .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* تأثيرات خاصة للأيقونات الجديدة */
+.skill-card:nth-child(4) .skill-icon {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.skill-card:nth-child(5) .skill-icon {
+    background: linear-gradient(135deg, #5f27cd, #341f97);
+}
+
+/* تأثير hover للبطاقات الجديدة */
+.skill-card:nth-child(4):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
+}
+
+.skill-card:nth-child(5):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(95, 39, 205, 0.3);
+}
+
+/* تحسين الاستجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .technical-skills-section .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .technical-skills-section .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تصميم خاص للأيقونات التي تحتوي على صور */
+.skill-icon-image {
+    background: linear-gradient(135deg, #00d2d3, #00a8cc) !important;
+    padding: 8px;
+}
+
+.skill-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(1.1) contrast(1.1);
+    transition: all 0.3s ease;
+}
+
+/* تأثير hover للصورة */
+.skill-card:hover .skill-image {
+    transform: scale(1.1);
+    filter: brightness(1.2) contrast(1.2);
+}
+
+/* تأثير خاص لبطاقة Virtual Breadboard */
+.skill-card:nth-child(4):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 210, 211, 0.3);
+}
+
+.skill-card:nth-child(4) .skill-icon-image:hover {
+    background: linear-gradient(135deg, #00a8cc, #00d2d3);
+}
+
+/* تحسين للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .skill-image {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تصميم عام للأيقونات التي تحتوي على صور */
+.skill-icon-image {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef) !important;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.skill-image {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+/* تأثيرات hover مختلفة لكل برنامج */
+
+/* Arduino IDE - أزرق */
+.skill-card:nth-child(1) .skill-icon-image {
+    background: linear-gradient(135deg, #00979d, #00646a) !important;
+}
+
+.skill-card:nth-child(1):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 151, 157, 0.3);
+}
+
+.skill-card:nth-child(1):hover .skill-icon-image {
+    background: linear-gradient(135deg, #00646a, #00979d) !important;
+    border-color: #00979d;
+}
+
+/* Multisim - أزرق غامق */
+.skill-card:nth-child(2) .skill-icon-image {
+    background: linear-gradient(135deg, #1e3799, #0c2461) !important;
+}
+
+.skill-card:nth-child(2):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(30, 55, 153, 0.3);
+}
+
+.skill-card:nth-child(2):hover .skill-icon-image {
+    background: linear-gradient(135deg, #0c2461, #1e3799) !important;
+    border-color: #1e3799;
+}
+
+/* Circuit Wizard - بنفسجي */
+.skill-card:nth-child(3) .skill-icon-image {
+    background: linear-gradient(135deg, #8c7ae6, #6c5ce7) !important;
+}
+
+.skill-card:nth-child(3):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(140, 122, 230, 0.3);
+}
+
+.skill-card:nth-child(3):hover .skill-icon-image {
+    background: linear-gradient(135deg, #6c5ce7, #8c7ae6) !important;
+    border-color: #8c7ae6;
+}
+
+/* Virtual Breadboard - أخضر */
+.skill-card:nth-child(4) .skill-icon-image {
+    background: linear-gradient(135deg, #00d2d3, #00a8cc) !important;
+}
+
+.skill-card:nth-child(4):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 210, 211, 0.3);
+}
+
+.skill-card:nth-child(4):hover .skill-icon-image {
+    background: linear-gradient(135deg, #00a8cc, #00d2d3) !important;
+    border-color: #00d2d3;
+}
+
+/* Proteus - برتقالي */
+.skill-card:nth-child(5) .skill-icon-image {
+    background: linear-gradient(135deg, #ff9ff3, #f368e0) !important;
+}
+
+.skill-card:nth-child(5):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(255, 159, 243, 0.3);
+}
+
+.skill-card:nth-child(5):hover .skill-icon-image {
+    background: linear-gradient(135deg, #f368e0, #ff9ff3) !important;
+    border-color: #ff9ff3;
+}
+
+/* تأثير hover للصور */
+.skill-card:hover .skill-image {
+    transform: scale(1.1);
+    filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.15));
+}
+
+/* تأثير loading للصور */
+.skill-image {
+    opacity: 0;
+    animation: fadeInImage 0.5s ease forwards;
+}
+
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* تأثير إضافي - نبضة خفيفة */
+.skill-card:hover .skill-icon-image {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/* تحسين للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .skill-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .skill-icon-image {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .skill-icon-image {
+        padding: 6px;
+    }
+}
+
+
+
+/* معالجة حالة عدم تحميل الصورة */
+.skill-image {
+    background: linear-gradient(135deg, #f1f2f6, #ddd);
+    border-radius: 4px;
+}
+
+.skill-image:not([src]) {
+    content: "🔧";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}

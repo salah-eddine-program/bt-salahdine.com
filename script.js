@@ -477,3 +477,323 @@ window.togglePump = togglePump;
 window.updateStats = updateStats;
 window.toggleSolarSystem = toggleSolarSystem;
 window.optimizeSystem = optimizeSystem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// إضافة هذا الكود في script.js
+
+// تأثير تحميل السيرة الذاتية
+document.addEventListener('DOMContentLoaded', function() {
+    const cvButton = document.querySelector('.btn-cv');
+    
+    if (cvButton) {
+        cvButton.addEventListener('click', function(e) {
+            // تأثير التحميل
+            this.classList.add('downloading');
+            const originalText = this.querySelector('.btn-text').textContent;
+            this.querySelector('.btn-text').textContent = 'جاري التحميل...';
+            
+            // إزالة تأثير التحميل بعد ثانيتين
+            setTimeout(() => {
+                this.classList.remove('downloading');
+                this.querySelector('.btn-text').textContent = originalText;
+                
+                // رسالة نجاح
+                showDownloadSuccess();
+            }, 2000);
+        });
+        
+        // تأثير الماوس المتابع
+        cvButton.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            this.style.setProperty('--mouse-x', x + 'px');
+            this.style.setProperty('--mouse-y', y + 'px');
+        });
+    }
+});
+
+// دالة إظهار رسالة نجاح التحميل
+function showDownloadSuccess() {
+    // إنشاء عنصر الإشعار
+    const notification = document.createElement('div');
+    notification.className = 'download-notification';
+    notification.innerHTML = `
+        <i class="fas fa-check-circle"></i>
+        <span>تم بدء تحميل السيرة الذاتية بنجاح!</span>
+    `;
+    
+    // إضافة الإشعار للصفحة
+    document.body.appendChild(notification);
+    
+    // إظهار الإشعار
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+    
+    // إخفاء الإشعار بعد 3 ثوان
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 3000);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
