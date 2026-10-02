@@ -3,577 +3,426 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صلاح الدين بن التواتي - مهندس أنظمة مضمنة</title>
-    <meta name="description" content="مهندس إلكترونيك أنظمة مضمنة، شغوف بابتكار حلول تقنية ذكية، بخبرة في الصيانة والبرمجة والتحكم عن بعد">
-    <meta name="keywords" content="مهندس إلكترونيك، أنظمة مضمنة، Arduino، برمجة، صيانة إلكترونية، ورقلة، الجزائر">
+    <title>صلاح الدين بن التواتي | مهندس أنظمة مضمنة</title>
+    <meta name="description" content="صلاح الدين بن التواتي، مهندس إلكترونيك أنظمة مضمنة من الجزائر. خبرة في Arduino والتحكم عن بعد وصيانة الأنظمة الإلكترونية، ومشاريع حائزة على جوائز جامعية.">
+    <meta name="keywords" content="مهندس إلكترونيك، أنظمة مضمنة، Arduino، GSM، التحكم عن بعد، صيانة إلكترونية، ورقلة، إليزي، الجزائر">
     <meta name="author" content="صلاح الدين بن التواتي">
-    
+    <meta name="theme-color" content="#0b1220">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_DZ">
+    <meta property="og:title" content="صلاح الدين بن التواتي | مهندس أنظمة مضمنة">
+    <meta property="og:description" content="مهندس إلكترونيك أنظمة مضمنة، شغوف بابتكار حلول تقنية ذكية في التحكم عن بعد والطاقة الشمسية.">
+    <meta property="og:image" content="images/profile.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='%23f97316' text-anchor='middle'%3ESB%3C/text%3E%3C/svg%3E">
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "صلاح الدين بن التواتي",
+        "alternateName": "Salah Eddine Benettouati",
+        "jobTitle": "مهندس أنظمة مضمنة",
+        "email": "mailto:benettouati.salah.eddin@gmail.com",
+        "alumniOf": "جامعة قاصدي مرباح ورقلة",
+        "address": { "@type": "PostalAddress", "addressLocality": "إليزي", "addressCountry": "DZ" },
+        "sameAs": [
+            "https://www.linkedin.com/in/salah-eddin-benettouati-98a101310/",
+            "https://github.com/salah-eddine-program"
+        ]
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h3>صلاح الدين بن التواتي </h3>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">الرئيسية</a></li>
-                <li><a href="#about" class="nav-link">نبذة عني</a></li>
-                <li><a href="#projects" class="nav-link">المشاريع</a></li>
-                <li><a href="#education" class="nav-link">التعليم</a></li>
-                <li><a href="#contact" class="nav-link">التواصل</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-animation">
-        </div>
-        
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="profile-image">
-                    <img src="images/profile.png" alt="صلاح الدين بن التواتي">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container" aria-label="القائمة الرئيسية">
+            <a href="#home" class="nav-logo" aria-label="الصفحة الرئيسية">
+                <span class="logo-mark">SB</span>
+                <span class="logo-text">صلاح الدين بن التواتي</span>
+            </a>
+            <button class="hamburger" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">نبذة عني</a></li>
+                <li><a href="#experience" class="nav-link">الخبرة</a></li>
+                <li><a href="#projects" class="nav-link">المشاريع</a></li>
+                <li><a href="#tools" class="nav-link">الأدوات</a></li>
+                <li><a href="#education" class="nav-link">التعليم</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow"><span class="status-dot"></span> متاح للفرص الجديدة</p>
+                    <h1 class="hero-title">صلاح الدين <span>بن التواتي</span></h1>
+                    <p class="hero-subtitle">مهندس أنظمة مضمنة، شغوف بابتكار حلول تقنية ذكية</p>
+                    <p class="hero-description">
+                        مهندس إلكترونيك أنظمة مضمنة متخرج سنة 2024 من جامعة قاصدي مرباح ورقلة.
+                        أتمتع بخبرة عملية في صيانة الأنظمة الإلكترونية والتحكم عن بعد،
+                        من خلال العمل ضمن فرق متخصصة وصيانة الأجهزة الإلكترونية.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">استعرض أعمالي <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+                        <a href="cv/Salah-Eddine-Benettouati-CV.pdf" download="Salah_Eddine_Benettouati_CV.pdf" class="btn btn-ghost">
+                            <i class="fas fa-download" aria-hidden="true"></i> تحميل السيرة الذاتية
+                        </a>
+                    </div>
                 </div>
-                <h1 class="hero-title">صلاح الدين بن التواتي</h1>
-                <p class="hero-subtitle">مهندس أنظمة مضمنة، شغوف بابتكار حلول تقنية ذكية</p>
-                <p class="hero-description">
-                    مهندس إلكترونيك أنظمة مضمنة متخرج سنة 2024 من جامعة قاصدي مرباح ورقلة. 
-                    أتمتع بخبرة عملية في مجال صيانة الأنظمة الإلكترونية والتحكم عن بعد، 
-                    من خلال العمل ضمن فرق متخصصة وصيانة الأجهزة الإلكترونية.
+
+                <div class="hero-visual">
+                    <div class="chip">
+                        <span class="pins pins-top" aria-hidden="true"></span>
+                        <span class="pins pins-bottom" aria-hidden="true"></span>
+                        <img src="images/profile.png" alt="صورة صلاح الدين بن التواتي" width="367" height="371" fetchpriority="high">
+                    </div>
+                    <dl class="hero-stats">
+                        <div><dt>سنة خبرة</dt><dd>+1</dd></div>
+                        <div><dt>مشاريع حائزة على جوائز</dt><dd>2</dd></div>
+                        <div><dt>لغات برمجة</dt><dd>+5</dd></div>
+                    </dl>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="انتقل إلى نبذة عني"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-index">01</span>
+                    <h2 class="section-title">نبذة عني</h2>
+                </header>
+
+                <p class="lead reveal">
+                    مهندس إلكترونيك متخصص في الأنظمة المضمنة، أسعى دائماً لتطوير حلول تقنية مبتكرة
+                    تساهم في تحسين جودة الحياة وحل المشاكل العملية. خبرتي تشمل تصميم وتطوير
+                    الأنظمة الإلكترونية، البرمجة، والصيانة التخصصية.
                 </p>
 
-
-                <!-- استبدل div.hero-buttons في Hero Section بهذا -->
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">استعرض أعمالي</a>
-                    <a href="#contact" class="btn btn-secondary">تواصل معي</a>
-                    <a href="cv/BENETTOUATI SALAH EDDINE_CV .pdf" download="Salah_Eddine_Benettouati_CV.pdf" class="btn btn-cv">
-                        <i class="fas fa-download"></i>
-                        <span class="">تحميل السيرة الذاتية</span>
-                        <div class="btn-shine"></div>
-                    </a>
+                <h3 class="sub-title">مجالات خبرتي</h3>
+                <div class="cards-grid">
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+                        <h4>الأنظمة المضمنة</h4>
+                        <p>تصميم وتطوير الأنظمة المضمنة باستخدام Arduino والمتحكمات الدقيقة.</p>
+                        <span class="badge">خبير</span>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h4>البرمجة</h4>
+                        <p>خبرة في لغات برمجة متعددة وتطوير البرمجيات المتخصصة للأنظمة المضمنة.</p>
+                        <span class="badge">متقدم</span>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fas fa-tower-broadcast" aria-hidden="true"></i></div>
+                        <h4>التحكم عن بعد</h4>
+                        <p>تطوير أنظمة التحكم اللاسلكي والاتصالات الرقمية.</p>
+                        <span class="badge">متقدم</span>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i></div>
+                        <h4>الصيانة التخصصية</h4>
+                        <p>صيانة وإصلاح الأنظمة الإلكترونية المتقدمة والأجهزة التقنية.</p>
+                        <span class="badge">متقدم</span>
+                    </article>
                 </div>
 
-
-
-
-
+                <h3 class="sub-title">لغات البرمجة والتقنيات</h3>
+                <ul class="languages" aria-label="مستوى إتقان لغات البرمجة">
+                    <li class="language">
+                        <div class="language-header"><span dir="ltr">C++</span><span class="mono">87%</span></div>
+                        <div class="meter" role="progressbar" aria-label="C++" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"><span style="--value: 87%"></span></div>
+                    </li>
+                    <li class="language">
+                        <div class="language-header"><span dir="ltr">Arduino</span><span class="mono">84%</span></div>
+                        <div class="meter" role="progressbar" aria-label="Arduino" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"><span style="--value: 84%"></span></div>
+                    </li>
+                    <li class="language">
+                        <div class="language-header"><span dir="ltr">PHP &amp; MySQL</span><span class="mono">64%</span></div>
+                        <div class="meter" role="progressbar" aria-label="PHP و MySQL" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"><span style="--value: 64%"></span></div>
+                    </li>
+                    <li class="language">
+                        <div class="language-header"><span dir="ltr">Python</span><span class="mono">60%</span></div>
+                        <div class="meter" role="progressbar" aria-label="Python" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span style="--value: 60%"></span></div>
+                    </li>
+                    <li class="language">
+                        <div class="language-header"><span dir="ltr">Java</span><span class="mono">30%</span></div>
+                        <div class="meter" role="progressbar" aria-label="Java" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span style="--value: 30%"></span></div>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <h2 class="section-title">نبذة عني</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <div class="text-wrapper">
-                    <p class="intro-text">
-                        مهندس إلكترونيك متخصص في الأنظمة المضمنة، أسعى دائماً لتطوير حلول تقنية مبتكرة 
-                        تساهم في تحسين جودة الحياة وحل المشاكل العملية. خبرتي تشمل تصميم وتطوير 
-                        الأنظمة الإلكترونية، البرمجة، والصيانة التخصصية.
-                    </p>
-                    <div class="highlight-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">1+</div>
-                            <div class="stat-label">سنة خبرة</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">2</div>
-                            <div class="stat-label">مشاريع مميزة</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">لغات برمجة</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!-- Skills Grid -->
-        <div class="skills-section">
-            <h3 class="skills-main-title">مجالات خبرتي</h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>البرمجة</h3>
-                    <p>خبرة في لغات البرمجة المتعددة وتطوير البرمجيات المتخصصة للأنظمة المضمنة</p>
-                    <div class="skill-badge">متقدم</div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <h3>الأنظمة المضمنة</h3>
-                    <p>تصميم وتطوير الأنظمة المضمنة باستخدام Arduino والمتحكمات الدقيقة</p>
-                    <div class="skill-badge">خبير</div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>الصيانة التخصصية</h3>
-                    <p>صيانة وإصلاح الأنظمة الإلكترونية المتقدمة والأجهزة التقنية</p>
-                    <div class="skill-badge">متقدم</div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <h3>التحكم عن بعد</h3>
-                    <p>تطوير أنظمة التحكم اللاسلكي والاتصالات الرقمية</p>
-                    <div class="skill-badge">متقدم</div>
-                </div>
-            </div>
-        </div>
+        <!-- Experience -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-index">02</span>
+                    <h2 class="section-title">الخبرة العملية</h2>
+                </header>
 
-        <!-- Programming Languages -->
-        <div class="languages-section">
-            <h3 class="languages-title">لغات البرمجة والتقنيات</h3>
-            <div class="languages-grid">
-                <div class="language-item">
-                    <div class="language-header">
-                        <span class="language-name">C++ Programming</span>
-                        <span class="language-percentage">87%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar cpp" data-width="87"></div>
-                    </div>
-                </div>
-                
-                <div class="language-item">
-                    <div class="language-header">
-                        <span class="language-name">Arduino Programming</span>
-                        <span class="language-percentage">84%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar arduino" data-width="84"></div>
-                    </div>
-                </div>
-                
-                <div class="language-item">
-                    <div class="language-header">
-                        <span class="language-name">Python</span>
-                        <span class="language-percentage">60%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar python" data-width="60"></div>
-                    </div>
-                </div>
-                
-                <div class="language-item">
-                    <div class="language-header">
-                        <span class="language-name">Java</span>
-                        <span class="language-percentage">30%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar java" data-width="30"></div>
-                    </div>
-                </div>
-                
-                <div class="language-item">
-                    <div class="language-header">
-                        <span class="language-name">PHP & MySQL</span>
-                        <span class="language-percentage">64%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar php" data-width="64"></div>
-                    </div>
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker"><i class="fas fa-industry" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <span class="period mono">14/04/2024 – 21/04/2024</span>
+                            <h3>سوناطراك – حوض بركاوي، ورقلة</h3>
+                            <p class="role">مهندس صيانة الأنظمة والأجهزة الإلكترونية</p>
+                            <p>دورة ميدانية حول السلامة العامة في المصنع ومراحل التصنيع بدءًا من الإنتاج والتكرير وصولاً إلى التصدير، بما في ذلك التعرف على جميع المعدات اللازمة وصيانة معظم أجهزة القياس في المصنع والآبار. كما شملت الدورة كيفية إدارة ومراقبة الإنتاج من غرفة التحكم المركزية والأنظمة المستخدمة، بما في ذلك أنظمة الإشارات ومعدات تكنولوجيا المعلومات.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker"><i class="fas fa-plane" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <span class="period mono">15/07/2021 – 29/07/2021</span>
+                            <h3>الخطوط الجوية الجزائرية – المديرية الجهوية بورقلة</h3>
+                            <p class="role">صيانة الأجهزة وصيانة الإشارات</p>
+                            <p>تنفيذ أعمال صيانة واختبار للأنظمة الإلكترونية ومعدات تكنولوجيا المعلومات، وتشخيص الأعطال على مستوى المكونات، والعمل على الأنظمة المدمجة والشبكات المحلية، والقيام بأعمال الصيانة الدورية والتحديثات التقنية.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-index">03</span>
+                    <h2 class="section-title">مشاريعي</h2>
+                </header>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <a href="project/solar-pump.html" class="project-image" tabindex="-1" aria-hidden="true">
+                            <img src="images/solar-system.png" alt="" width="712" height="495" loading="lazy" decoding="async">
+                        </a>
+                        <div class="project-content">
+                            <p class="project-award gold"><i class="fas fa-trophy" aria-hidden="true"></i> المركز الأول – مسابقة الجامعة 2023</p>
+                            <h3><a href="project/solar-pump.html">نظام مضخات المياه بالطاقة الشمسية</a></h3>
+                            <p>تطوير نظام التحكم في مضخات المياه عن بعد ليعمل بالطاقة الشمسية بشكل صديق للبيئة، مع لوحة Arduino وألواح شمسية عالية الكفاءة.</p>
+                            <ul class="tags" dir="ltr">
+                                <li>Arduino</li><li>Solar Panels</li><li>IoT</li><li>Green Energy</li>
+                            </ul>
+                            <a href="project/solar-pump.html" class="link-arrow">عرض المشروع <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a href="project/control-pump.html" class="project-image" tabindex="-1" aria-hidden="true">
+                            <img src="images/control-system.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+                        </a>
+                        <div class="project-content">
+                            <p class="project-award silver"><i class="fas fa-medal" aria-hidden="true"></i> المركز الثاني – مسابقة الجامعة 2022</p>
+                            <h3><a href="project/control-pump.html">نظام التحكم في مضخات المياه عن بعد</a></h3>
+                            <p>نظام للتحكم في مضخات المياه عن بعد عبر الاتصال الهاتفي دون الحاجة للانتقال، باستخدام لوحة تحكم Arduino ووحدة GSM.</p>
+                            <ul class="tags" dir="ltr">
+                                <li>Arduino</li><li>GSM Module</li><li>C++</li><li>Electronics</li>
+                            </ul>
+                            <a href="project/control-pump.html" class="link-arrow">عرض المشروع <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-            <!-- Experience Section -->
-            <div class="experience-section">
-                <h3>الخبرة العملية</h3>
-                <div class="experience-cards">
-                    <div class="experience-card">
-                        <div class="company-logo">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div class="experience-details">
-                            <h4>الخطوط الجوية الجزائرية – المديرية الجهوية بورقلة</h4>
-                            <p class="company">صيانة الأجهزة وصيانة الإشارات</p>
-                            <p class="period">15/07/2021 – 29/07/2021</p>
-                            <p class="description">• تنفيذ أعمال صيانة واختبار للأنظمة الإلكترونية ومعدات تكنولوجيا المعلومات، وتشخيص الأعطال على مستوى المكونات، والعمل على الأنظمة المدمجة والشبكات المحلية، والقيام بأعمال الصيانة الدورية والتحديثات التقنية.</p>
-                        </div>
+        <!-- Tools -->
+        <section id="tools" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-index">04</span>
+                    <h2 class="section-title">المهارات التقنية والأدوات</h2>
+                </header>
+
+                <div class="tools-grid">
+                    <div class="tool reveal">
+                        <img src="images/arduino-ide-icon.png" alt="" width="64" height="64" loading="lazy">
+                        <div><h3>Arduino IDE</h3><p>بيئة التطوير المتكاملة لبرمجة المتحكمات الدقيقة</p></div>
                     </div>
-                    
-                    <div class="experience-card">
-                        <div class="company-logo">
-                            <i class="fas fa-laptop"></i>
-                        </div>
-                        <div class="experience-details">
-                            <h4>سوناطراك – حوض بركاوي، ورقلة</h4>
-                            <p class="company">مهندس صيانة الأنظمة والأجهزة الإلكترونية</p>
-                            <p class="period">14/04/2024 – 21/04/2024</p>
-                            <p class="description">• دورة ميدانية حول السلامة العامة في المصنع ومراحل التصنيع بدءًا من الإنتاج والتكرير وصولاً إلى التصدير، بما في ذلك التعرف على جميع المعدات اللازمة وصيانة معظم أجهزة القياس في المصنع والآبار. كما شملت الدورة كيفية إدارة ومراقبة الإنتاج من غرفة التحكم المركزية والأنظمة المستخدمة، بما في ذلك أنظمة الإشارات ومعدات تكنولوجيا المعلومات.</p>
-                        </div>
+                    <div class="tool reveal">
+                        <img src="images/proteus-icon.png" alt="" width="64" height="64" loading="lazy">
+                        <div><h3>Proteus</h3><p>تصميم المخططات الإلكترونية ومحاكاة المتحكمات الدقيقة</p></div>
+                    </div>
+                    <div class="tool reveal">
+                        <img src="images/multisim-icon.png" alt="" width="64" height="64" loading="lazy">
+                        <div><h3>Multisim</h3><p>تصميم ومحاكاة الدوائر الإلكترونية</p></div>
+                    </div>
+                    <div class="tool reveal">
+                        <img src="images/circuit-wizard-icon.png" alt="" width="64" height="64" loading="lazy">
+                        <div><h3>Circuit Wizard</h3><p>تصميم وتطوير الدوائر المتقدمة</p></div>
+                    </div>
+                    <div class="tool reveal">
+                        <img src="images/virtual-breadboard-icon.png" alt="" width="64" height="64" loading="lazy">
+                        <div><h3>Virtual Breadboard</h3><p>محاكاة وتصميم الدوائر الإلكترونية بشكل تفاعلي</p></div>
+                    </div>
+                    <div class="tool reveal">
+                        <span class="tool-icon"><i class="fas fa-signal" aria-hidden="true"></i></span>
+                        <div><h3>صيانة الأجهزة والإشارات</h3><p>تشخيص وإصلاح الأعطال الإلكترونية</p></div>
                     </div>
                 </div>
             </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">مشاريعي</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/control-system.jpg" alt="نظام التحكم في المضخات">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>نظام التحكم في مضخات المياه عن بعد</h3>
-                        <p class="project-description">
-                            نظام متطور للتحكم في مضخات المياه عن بعد عبر الاتصال الهاتفي 
-                            دون الحاجة للانتقال، مع استخدام لوحة تحكم Arduino ووحدة GSM.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Arduino</span>
-                            <span class="tech-tag">GSM Module</span>
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Electronics</span>
-                        </div>
-                        <div class="project-award">
-                            <i class="fas fa-medal"></i>
-                            <span>المركز الثاني - مسابقة الجامعة 2022</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="project/control-pump.html" class="btn btn-primary">عرض المشروع</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-index">05</span>
+                    <h2 class="section-title">التعليم والمؤهلات</h2>
+                </header>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/solar-system.png" alt="نظام الطاقة الشمسية">
-                        <div class="project-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>نظام مضخات المياه بالطاقة الشمسية</h3>
-                        <p class="project-description">
-                            تطوير نظام التحكم في مضخات المياه عن بعد ليعمل بالطاقة الشمسية 
-                            صديقة للبيئة، مع لوحة Arduino وألواح شمسية عالية الكفاءة.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Arduino</span>
-                            <span class="tech-tag">Solar Panels</span>
-                            <span class="tech-tag">IoT</span>
-                            <span class="tech-tag">Green Energy</span>
-                        </div>
-                        <div class="project-award">
-                            <i class="fas fa-trophy"></i>
-                            <span>المركز الأول - مسابقة الجامعة 2023</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="project/solar-pump.html" class="btn btn-primary">عرض المشروع</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-            <!-- Technical Skills -->
-            <div class="technical-skills-section">
-                <h3 class="skills-title">المهارات التقنية والأدوات</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon skill-icon-image">
-                            <img src="images/arduino-ide-icon.png" alt="Arduino IDE" class="skill-image">
-                        </div>
-                        <h3>Arduino IDE</h3>
-                        <p>بيئة التطوير المتكاملة لبرمجة المتحكمات الدقيقة</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-icon skill-icon-image">
-                            <img src="images/multisim-icon.png" alt="Multisim" class="skill-image">
-                        </div>
-                        <h3>Multisim</h3>
-                        <p>تصميم ومحاكاة الدوائر الإلكترونية</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-icon skill-icon-image">
-                            <img src="images/circuit-wizard-icon.png" alt="Circuit Wizard" class="skill-image">
-                        </div>
-                        <h3>Circuit Wizard</h3>
-                        <p>تصميم وتطوير الدوائر المتقدمة</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-icon skill-icon-image">
-                            <img src="images/virtual-breadboard-icon.png" alt="Virtual Breadboard" class="skill-image">
-                        </div>
-                        <h3>Virtual Breadboard</h3>
-                        <p>محاكاة وتصميم الدوائر الإلكترونية بشكل تفاعلي</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-icon skill-icon-image">
-                            <img src="images/proteus-icon.png" alt="Proteus" class="skill-image">
-                        </div>
-                        <h3>Proteus</h3>
-                        <p>تصميم المخططات الإلكترونية ومحاكاة المتحكمات الدقيقة</p>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-signal"></i>
-                        </div>
-                        <h3>صيانة الأجهزة والإشارات</h3>
-                        <p>تشخيص وإصلاح الأعطال الإلكترونية</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">التعليم والمؤهلات</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>ماستر إلكترونيات الأنظمة المدمجة</h3>
-                        <p class="institution">جامعة قاصدي مرباح ورقلة</p>
-                        <p class="period">2019 - 2024</p>
-                        <p class="location">كلية التكنولوجيات الحديثة للمعلومات والاتصال</p>
-                        <div class="achievements">
-                            <h4>الإنجازات الأكاديمية:</h4>
-                            <ul>
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <span class="period mono">2019 – 2024</span>
+                            <h3>ماستر إلكترونيات الأنظمة المدمجة</h3>
+                            <p class="role">جامعة قاصدي مرباح ورقلة — كلية التكنولوجيات الحديثة للمعلومات والاتصال</p>
+                            <ul class="achievements">
                                 <li>المركز الأول في مسابقة المشاريع التقنية PFC 2023</li>
                                 <li>المركز الثاني في مسابقة المشاريع التقنية PFC 2022</li>
-                                <li>عضو نشط في نادي الهندسة الإلكترونية UKMO </li>
+                                <li>عضو نشط في نادي الهندسة الإلكترونية UKMO</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-school"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>شهادة البكالوريا</h3>
-                        <p class="institution">ثانوية احمد عبيدلي</p>
-                        <p class="period">2019</p>
-                        <p class="location">ورقلة، الجزائر</p>
-                        <p class="specialty"> شعبة هندسة الطرائق </p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>التعليم الديني</h3>
-                        <p class="institution">. مسجد عمر بن الخطاب حي شيخ بن جلول سكرة ورقلة </p>
-                        <p class="institution">. مسجد الفجر حي النصر ورقلة </p>
-              
-                        <p class="period">مستمر</p>
-                        <p class="description">تعلم وحفظ القرآن الكريم مع التجويد</p>
-                    </div>
-                </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker"><i class="fas fa-school" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <span class="period mono">2019</span>
+                            <h3>شهادة البكالوريا – شعبة هندسة الطرائق</h3>
+                            <p class="role">ثانوية أحمد عبيدلي — ورقلة، الجزائر</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker"><i class="fas fa-book-quran" aria-hidden="true"></i></div>
+                        <div class="timeline-content">
+                            <span class="period mono">مستمر</span>
+                            <h3>التعليم الديني</h3>
+                            <p class="role">مسجد عمر بن الخطاب، حي الشيخ بن جلول، سكرة – ورقلة · مسجد الفجر، حي النصر – ورقلة</p>
+                            <p>تعلم وحفظ القرآن الكريم مع التجويد.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-            
+        </section>
 
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-index">06</span>
+                    <h2 class="section-title">تواصل معي</h2>
+                </header>
 
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <a class="contact-item" href="mailto:benettouati.salah.eddin@gmail.com">
+                            <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                            <span><strong>البريد الإلكتروني</strong><span dir="ltr">benettouati.salah.eddin@gmail.com</span></span>
+                        </a>
+                        <a class="contact-item" href="tel:+213553699473">
+                            <span class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                            <span><strong>الهاتف (الرقم الأول)</strong><span dir="ltr">+213 553 69 94 73</span></span>
+                        </a>
+                        <a class="contact-item" href="tel:+213658891962">
+                            <span class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                            <span><strong>الهاتف (الرقم الثاني)</strong><span dir="ltr">+213 658 89 19 62</span></span>
+                        </a>
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></span>
+                            <span><strong>الموقع</strong><span>إليزي، الجزائر</span></span>
+                        </div>
 
-
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">تواصل معي</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>البريد الإلكتروني</h4>
-                        <p>benettouati.salah.eddin@gmail.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>أرقام الهاتف</h4>
-                        <div class="phone-numbers">
-                            <p class="phone-number">
-                                <span class="phone-label">الرقم الأول:</span>
-                                <span class="phone-value">+213 553 69 94 73</span>
-                            </p>
-                            <p class="phone-number">
-                                <span class="phone-label">الرقم الثاني:</span>
-                                <span class="phone-value">+213 658 89 19 62</span>
-                            </p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/salah-eddin-benettouati-98a101310/" target="_blank" rel="noopener noreferrer" aria-label="لينكد إن"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://github.com/salah-eddine-program" target="_blank" rel="noopener noreferrer" aria-label="جيتهاب"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="mailto:benettouati.salah.eddin@gmail.com" aria-label="البريد الإلكتروني"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>الموقع</h4>
-                        <p>إليزي، الجزائر</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>حالة العمل</h4>
-                        <p class="work-status">متاح للفرص الجديدة</p>
-                    </div>
-                </div>
-            </div>
-            
-            <form class="contact-form" id="contactForm">
-                <div class="form-header">
-                    <h3>أرسل لي رسالة</h3>
-                    <p>سأكون سعيداً للتواصل معك ومناقشة الفرص المحتملة</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="name">الاسم الكامل</label>
-                    <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">البريد الإلكتروني</label>
-                    <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">الموضوع</label>
-                    <input type="text" id="subject" name="subject" required placeholder="موضوع الرسالة">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">الرسالة</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i>
-                    إرسال الرسالة
-                </button>
-            </form>
-        </div>
-        
-        <!-- Social Links -->
-        <div class="social-links">
-            <h3 class="social-title">تابعني على</h3>
-            <div class="social-icons">
-                <a href="mailto:benettouati.salah.eddin@gmail.com" class="social-link email" title="البريد الإلكتروني">
-                    <i class="fas fa-envelope"></i>
-                    <span>البريد الإلكتروني</span>
-                </a>
-                <a href="tel:+213553699473" class="social-link phone" title="الهاتف">
-                    <i class="fas fa-phone"></i>
-                    <span>الهاتف</span>
-                </a>
-                <a href="https://www.linkedin.com/in/salah-eddin-benettouati-98a101310/" class="social-link linkedin" title="لينكد إن" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <span>لينكد إن</span>
-                </a>
-                <a href="https://github.com/salah-eddine-program" class="social-link github" title="جيتهاب" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>جيتهاب</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-main">
-                <h3>صلاح الدين بن التواتي</h3>
+                    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden-field">
+                            <label>لا تملأ هذا الحقل: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                        </p>
+
+                        <h3>أرسل لي رسالة</h3>
+                        <p class="form-intro">سأكون سعيداً للتواصل معك ومناقشة الفرص المحتملة.</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" required autocomplete="name" placeholder="أدخل اسمك الكامل">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required autocomplete="email" dir="ltr" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <input type="text" id="subject" name="subject" required placeholder="موضوع الرسالة">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <span class="btn-label">إرسال الرسالة</span>
+                        </button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-name">صلاح الدين بن التواتي</p>
                 <p>مهندس أنظمة مضمنة | متخصص في الحلول التقنية المبتكرة</p>
             </div>
-            <div class="footer-links">
-                <a href="#home">الرئيسية</a>
+            <nav class="footer-links" aria-label="روابط التذييل">
                 <a href="#about">نبذة</a>
                 <a href="#experience">الخبرة</a>
-                <a href="#education">التعليم</a>
                 <a href="#projects">المشاريع</a>
+                <a href="#education">التعليم</a>
                 <a href="#contact">التواصل</a>
-            </div>
+            </nav>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 صلاح الدين بن التواتي. جميع الحقوق محفوظة.</p>
-        </div>
-    </div>
-</footer>
+        <p class="footer-bottom">&copy; <span id="year">2026</span> صلاح الدين بن التواتي. جميع الحقوق محفوظة.</p>
+    </footer>
 
-<!-- Custom JavaScript -->
-<script src="script.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
