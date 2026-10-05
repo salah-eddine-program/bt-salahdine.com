@@ -73,42 +73,33 @@ if (heroSubtitle && !prefersReducedMotion) {
     setTimeout(type, 500);
 }
 
-// Contact form — submitted to Netlify Forms without leaving the page
+// Contact form — GitHub Pages is static, so prepare a message in the visitor's email app.
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     const status = contactForm.querySelector('.form-status');
-    const button = contactForm.querySelector('button[type="submit"]');
-    const label = button.querySelector('.btn-label');
-
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        button.disabled = true;
-        label.textContent = isEnglish ? 'Sending...' : 'جاري الإرسال...';
-        status.className = 'form-status';
-        status.textContent = '';
+        const formData = new FormData(contactForm);
+        const senderName = String(formData.get('name') || '').trim();
+        const senderEmail = String(formData.get('email') || '').trim();
+        const subject = String(formData.get('subject') || '').trim();
+        const message = String(formData.get('message') || '').trim();
+        const recipient = 'benettouati.salah.eddin@gmail.com';
+        const body = isEnglish
+            ? `Name: ${senderName}\nEmail: ${senderEmail}\n\n${message}`
+            : `الاسم: ${senderName}\nالبريد الإلكتروني: ${senderEmail}\n\n${message}`;
+        const mailto = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-        try {
-            const response = await fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(new FormData(contactForm)).toString(),
-            });
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-            contactForm.reset();
-            status.classList.add('success');
-            status.textContent = isEnglish
-                ? 'Your message was sent successfully. Thank you for reaching out; I will get back to you soon.'
-                : 'تم إرسال رسالتك بنجاح، شكراً لتواصلك! سأرد عليك في أقرب وقت.';
-        } catch (error) {
-            status.classList.add('error');
-            status.textContent = isEnglish
-                ? 'The message could not be sent. Please try again or contact me directly by email.'
-                : 'تعذر إرسال الرسالة. يرجى المحاولة مرة أخرى أو مراسلتي مباشرة عبر البريد الإلكتروني.';
-        } finally {
-            button.disabled = false;
-            label.textContent = isEnglish ? 'Send message' : 'إرسال الرسالة';
-        }
+        status.className = 'form-status notice';
+        status.replaceChildren();
+        status.append(document.createTextNode(isEnglish
+            ? 'Your message is ready. Send it from your email app. If no app opened, email me at '
+            : 'تم تجهيز رسالتك. أرسلها من تطبيق البريد. إذا لم يفتح التطبيق، راسلني على '));
+        const emailLink = document.createElement('a');
+        emailLink.href = `mailto:${recipient}`;
+        emailLink.textContent = recipient;
+        status.append(emailLink, document.createTextNode('.'));
+        window.location.href = mailto;
     });
 }
 

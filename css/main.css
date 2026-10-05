@@ -570,6 +570,8 @@ a.contact-item:hover { border-color: rgba(249, 115, 22, 0.5); }
 .form-status { margin-top: 1rem; font-size: 0.95rem; min-height: 1.5em; }
 .form-status.success { color: var(--signal); }
 .form-status.error { color: #f87171; }
+.form-status.notice { color: var(--muted); }
+.form-status a { color: var(--copper-soft); text-decoration: underline; overflow-wrap: anywhere; }
 
 /* ---------- Footer ---------- */
 .footer { padding: 3rem 0 2rem; border-top: 1px solid var(--line); }
