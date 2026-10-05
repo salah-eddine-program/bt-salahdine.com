@@ -31,6 +31,11 @@
 
 html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
+html[lang="en"] {
+    --font-display: 'Inter', 'Readex Pro', sans-serif;
+    --font-body: 'Inter', 'Readex Pro', sans-serif;
+}
+
 body {
     font-family: var(--font-body);
     font-size: 1.0625rem;
@@ -145,6 +150,8 @@ ul, ol { list-style: none; }
 .nav-link:hover, .nav-link.active { color: var(--text); background: rgba(255, 255, 255, 0.05); }
 .nav-cta { color: var(--copper); border: 1px solid rgba(249, 115, 22, 0.4); margin-inline-start: 0.5rem; }
 .nav-cta:hover { background: var(--copper); color: var(--ink); }
+.language-toggle { border: 1px solid var(--line-strong); color: var(--copper-soft); margin-inline-start: 0.25rem; }
+.language-toggle:hover { border-color: var(--copper); color: var(--text); background: rgba(249, 115, 22, 0.08); }
 
 .hamburger {
     display: none;
@@ -634,3 +641,7 @@ a.contact-item:hover { border-color: rgba(249, 115, 22, 0.5); }
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .js .reveal { opacity: 1; transform: none; }
 }
+
+html[lang="en"] .btn-primary i.fa-arrow-right { transition: transform 0.25s var(--ease); }
+html[lang="en"] .btn-primary:hover i.fa-arrow-right { transform: translateX(4px); }
+html[lang="en"] .link-arrow:hover i { transform: translateX(5px); }

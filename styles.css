@@ -5568,3 +5568,13 @@ section {
     justify-content: center;
     font-size: 24px;
 }
+
+
+/* Language switch and English typography */
+html[lang="en"] body { font-family: 'Inter', Arial, sans-serif; }
+.language-toggle {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+}

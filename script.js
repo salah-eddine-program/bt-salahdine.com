@@ -1,4 +1,10 @@
 // Smooth scrolling for navigation links
+const isEnglish = document.documentElement.lang === 'en';
+const languageToggle = document.querySelector('.language-toggle');
+if (languageToggle && window.location.hash) {
+    languageToggle.href += window.location.hash;
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -89,8 +95,8 @@ function togglePump(pumpId) {
         status.classList.remove('off');
         status.classList.add('on');
         pump.classList.add('active');
-        statusText.textContent = 'يعمل';
-        button.textContent = 'إيقاف';
+        statusText.textContent = isEnglish ? 'Running' : 'يعمل';
+        button.textContent = isEnglish ? 'Stop' : 'إيقاف';
         
         // تحديث الإحصائيات
         updateStats();
@@ -98,8 +104,8 @@ function togglePump(pumpId) {
         status.classList.remove('on');
         status.classList.add('off');
         pump.classList.remove('active');
-        statusText.textContent = 'متوقفة';
-        button.textContent = 'تشغيل';
+        statusText.textContent = isEnglish ? 'Off' : 'متوقفة';
+        button.textContent = isEnglish ? 'Start' : 'تشغيل';
     }
 }
 
@@ -110,10 +116,10 @@ function updateStats() {
     const powerConsumption = document.getElementById('power-consumption');
     const temperature = document.getElementById('temperature');
     
-    if (pressure) pressure.textContent = (2.5 + Math.random() * 0.5).toFixed(1) + ' بار';
+    if (pressure) pressure.textContent = (2.5 + Math.random() * 0.5).toFixed(1) + (isEnglish ? ' bar' : ' بار');
     if (tankLevel) tankLevel.textContent = Math.floor(70 + Math.random() * 20) + '%';
-    if (powerConsumption) powerConsumption.textContent = (1.2 + Math.random() * 0.8).toFixed(1) + ' كيلوواط';
-    if (temperature) temperature.textContent = Math.floor(25 + Math.random() * 8) + '°م';
+    if (powerConsumption) powerConsumption.textContent = (1.2 + Math.random() * 0.8).toFixed(1) + (isEnglish ? ' kW' : ' كيلوواط');
+    if (temperature) temperature.textContent = Math.floor(25 + Math.random() * 8) + (isEnglish ? '°C' : '°م');
 }
 
 // تحديث الإحصائيات كل 5 ثوان
@@ -134,11 +140,11 @@ function toggleSolarSystem() {
     systemActive = !systemActive;
     
     if (systemActive) {
-        button.textContent = 'إيقاف النظام';
+        button.textContent = isEnglish ? 'Stop system' : 'إيقاف النظام';
         button.style.background = '#ef4444';
         startSystemSimulation();
     } else {
-        button.textContent = 'تشغيل النظام';
+        button.textContent = isEnglish ? 'Start system' : 'تشغيل النظام';
         button.style.background = 'var(--primary-color)';
         stopSystemSimulation();
     }
@@ -174,7 +180,7 @@ function startSystemSimulation() {
         
         if (solarInput) solarInput.textContent = (700 + Math.random() * 80).toFixed(0) + 'W';
         if (batteryLevel) batteryLevel.textContent = (75 + Math.random() * 10).toFixed(0) + '%';
-        if (pumpFlow) pumpFlow.textContent = (10 + Math.random() * 5).toFixed(1) + ' ل/دق';
+        if (pumpFlow) pumpFlow.textContent = (10 + Math.random() * 5).toFixed(1) + (isEnglish ? ' L/min' : ' ل/دق');
     }, 2000);
 }
 
@@ -197,11 +203,11 @@ function stopSystemSimulation() {
     if (panel3Power) panel3Power.textContent = '251W';
     if (solarInput) solarInput.textContent = '734W';
     if (batteryLevel) batteryLevel.textContent = '78%';
-    if (pumpFlow) pumpFlow.textContent = '12 ل/دق';
+    if (pumpFlow) pumpFlow.textContent = isEnglish ? '12 L/min' : '12 ل/دق';
 }
 
 function optimizeSystem() {
-    alert('تم تحسين النظام! الكفاءة زادت بنسبة 12%');
+    alert(isEnglish ? 'System optimized! Efficiency increased by 12%.' : 'تم تحسين النظام! الكفاءة زادت بنسبة 12%');
     // يمكن إضافة المزيد من المحاكاة هنا
 }
 
