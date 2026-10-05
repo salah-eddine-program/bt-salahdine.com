@@ -1,6 +1,12 @@
 // Homepage behaviour: navigation, reveal animations, skill meters and contact form.
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isEnglish = document.documentElement.lang === 'en';
+
+const languageToggle = document.querySelector('.language-toggle');
+if (languageToggle && window.location.hash) {
+    languageToggle.href += window.location.hash;
+}
 
 // Navbar background once the page is scrolled
 const navbar = document.getElementById('navbar');
@@ -16,7 +22,9 @@ const setMenu = (open) => {
     hamburger.classList.toggle('active', open);
     navMenu.classList.toggle('active', open);
     hamburger.setAttribute('aria-expanded', String(open));
-    hamburger.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+    hamburger.setAttribute('aria-label', open
+        ? (isEnglish ? 'Close menu' : 'إغلاق القائمة')
+        : (isEnglish ? 'Open menu' : 'فتح القائمة'));
 };
 
 hamburger.addEventListener('click', () => setMenu(!navMenu.classList.contains('active')));
@@ -75,7 +83,7 @@ if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         button.disabled = true;
-        label.textContent = 'جاري الإرسال...';
+        label.textContent = isEnglish ? 'Sending...' : 'جاري الإرسال...';
         status.className = 'form-status';
         status.textContent = '';
 
@@ -89,13 +97,17 @@ if (contactForm) {
 
             contactForm.reset();
             status.classList.add('success');
-            status.textContent = 'تم إرسال رسالتك بنجاح، شكراً لتواصلك! سأرد عليك في أقرب وقت.';
+            status.textContent = isEnglish
+                ? 'Your message was sent successfully. Thank you for reaching out; I will get back to you soon.'
+                : 'تم إرسال رسالتك بنجاح، شكراً لتواصلك! سأرد عليك في أقرب وقت.';
         } catch (error) {
             status.classList.add('error');
-            status.textContent = 'تعذر إرسال الرسالة. يرجى المحاولة مرة أخرى أو مراسلتي مباشرة عبر البريد الإلكتروني.';
+            status.textContent = isEnglish
+                ? 'The message could not be sent. Please try again or contact me directly by email.'
+                : 'تعذر إرسال الرسالة. يرجى المحاولة مرة أخرى أو مراسلتي مباشرة عبر البريد الإلكتروني.';
         } finally {
             button.disabled = false;
-            label.textContent = 'إرسال الرسالة';
+            label.textContent = isEnglish ? 'Send message' : 'إرسال الرسالة';
         }
     });
 }

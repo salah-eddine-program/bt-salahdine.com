@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نظام مضخات المياه بالطاقة الشمسية - صلاح الدين بن التواتي</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Solar-Powered Water Pumping System - Salah Eddine Benettouati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <style>
         .project-hero {
             background: linear-gradient(135deg, #065f46 0%, #10b981 50%, #34d399 100%);
@@ -16,12 +16,12 @@
             color: white;
             position: relative;
         }
-        
+
         .solar-demo {
             background: var(--bg-light);
             padding: 4rem 0;
         }
-        
+
         .solar-system {
             max-width: 1000px;
             margin: 2rem auto;
@@ -30,14 +30,14 @@
             padding: 2rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-        
+
         .solar-panels {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
             margin-bottom: 3rem;
         }
-        
+
         .panel {
             background: linear-gradient(135deg, #1e40af, #3b82f6);
             border-radius: 10px;
@@ -47,7 +47,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .panel::before {
             content: '';
             position: absolute;
@@ -59,12 +59,12 @@
             transform: rotate(45deg);
             animation: shine 3s infinite;
         }
-        
+
         @keyframes shine {
             0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
             100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
-        
+
         .energy-flow {
             background: #f8fafc;
             border-radius: 15px;
@@ -72,7 +72,7 @@
             margin: 2rem 0;
             position: relative;
         }
-        
+
         .flow-diagram {
             display: flex;
             align-items: center;
@@ -80,13 +80,13 @@
             flex-wrap: wrap;
             gap: 2rem;
         }
-        
+
         .flow-item {
             text-align: center;
             flex: 1;
             min-width: 120px;
         }
-        
+
         .flow-icon {
             width: 80px;
             height: 80px;
@@ -98,30 +98,30 @@
             font-size: 2rem;
             color: white;
         }
-        
+
         .solar-icon { background: #f59e0b; }
         .battery-icon { background: #ef4444; }
         .pump-icon { background: #10b981; }
-        
+
         .flow-arrow {
             font-size: 2rem;
             color: var(--accent-color);
             animation: pulse 2s infinite;
         }
-        
+
         .environmental-impact {
             background: var(--bg-dark);
             color: var(--text-light);
             padding: 4rem 0;
         }
-        
+
         .impact-stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .impact-card {
             background: rgba(16, 185, 129, 0.1);
             border: 1px solid var(--accent-color);
@@ -129,25 +129,25 @@
             padding: 2rem;
             text-align: center;
         }
-        
+
         .impact-number {
             font-size: 3rem;
             font-weight: 700;
             color: var(--accent-color);
             margin-bottom: 0.5rem;
         }
-        
+
         .sustainability-features {
             background: white;
             padding: 4rem 0;
         }
-        
+
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .feature-card {
             background: #f0fdf4;
             border: 2px solid #bbf7d0;
@@ -155,19 +155,19 @@
             padding: 2rem;
             transition: transform 0.3s ease;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-5px);
             border-color: var(--accent-color);
         }
-        
+
         .innovation-award {
             background: linear-gradient(135deg, #fbbf24, #f59e0b);
             color: white;
             padding: 4rem 0;
             text-align: center;
         }
-        
+
         .award-badge {
             width: 150px;
             height: 150px;
@@ -179,7 +179,7 @@
             justify-content: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        
+
         .award-badge i {
             font-size: 4rem;
             color: #f59e0b;
@@ -191,14 +191,14 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h3>صلاح الدين بن التواتي</h3>
+                <h3>Salah Eddine Benettouati</h3>
             </div>
             <ul class="nav-menu">
-                <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
-                <li><a href="#demo" class="nav-link">النظام التفاعلي</a></li>
-                <li><a href="#sustainability" class="nav-link">الاستدامة</a></li>
-                <li><a href="#innovation" class="nav-link">الابتكار</a></li>
-                <li><a href="../en/project/solar-pump.html" class="nav-link language-toggle" lang="en" hreflang="en">English</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="#demo" class="nav-link">Interactive system</a></li>
+                <li><a href="#sustainability" class="nav-link">Sustainability</a></li>
+                <li><a href="#innovation" class="nav-link">Innovation</a></li>
+                <li><a href="../../project/solar-pump.html" class="nav-link language-toggle" lang="ar" hreflang="ar">العربية</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -212,14 +212,14 @@
     <section class="project-hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">نظام مضخات المياه بالطاقة الشمسية</h1>
-                <p class="hero-subtitle">حل مستدام وذكي للري باستخدام الطاقة المتجددة</p>
+                <h1 class="hero-title">Solar-Powered Water Pumping System</h1>
+                <p class="hero-subtitle">A sustainable, smart irrigation solution powered by renewable energy</p>
                 <div class="hero-description">
-                    <p>تطوير نظام التحكم في مضخات المياه عن بعد ليعمل بالطاقة الشمسية صديقة للبيئة، مع لوحة Arduino وألواح شمسية عالية الكفاءة.</p>
+                    <p>An eco-friendly solar-powered adaptation of a remote water-pump control system, built with an Arduino board and high-efficiency solar panels.</p>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#demo" class="btn btn-primary">استكشف النظام</a>
-                    <a href="#sustainability" class="btn btn-secondary">الأثر البيئي</a>
+                    <a href="#demo" class="btn btn-primary">Explore the system</a>
+                    <a href="#sustainability" class="btn btn-secondary">Environmental impact</a>
                 </div>
             </div>
         </div>
@@ -228,66 +228,66 @@
     <!-- Solar System Demo -->
     <section id="demo" class="solar-demo">
         <div class="container">
-            <h2 class="section-title">النظام التفاعلي</h2>
+            <h2 class="section-title">Interactive system</h2>
             <div class="solar-system">
-                <h3>الألواح الشمسية</h3>
+                <h3>Solar panels</h3>
                 <div class="solar-panels">
                     <div class="panel">
                         <i class="fas fa-solar-panel" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <h4>اللوح الأول</h4>
-                        <p>الطاقة: <span id="panel1-power">245W</span></p>
-                        <p>الكفاءة: <span id="panel1-efficiency">85%</span></p>
+                        <h4>Panel 1</h4>
+                        <p>Power: <span id="panel1-power">245W</span></p>
+                        <p>Efficiency: <span id="panel1-efficiency">85%</span></p>
                     </div>
                     <div class="panel">
                         <i class="fas fa-solar-panel" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <h4>اللوح الثاني</h4>
-                        <p>الطاقة: <span id="panel2-power">238W</span></p>
-                        <p>الكفاءة: <span id="panel2-efficiency">82%</span></p>
+                        <h4>Panel 2</h4>
+                        <p>Power: <span id="panel2-power">238W</span></p>
+                        <p>Efficiency: <span id="panel2-efficiency">82%</span></p>
                     </div>
                     <div class="panel">
                         <i class="fas fa-solar-panel" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <h4>اللوح الثالث</h4>
-                        <p>الطاقة: <span id="panel3-power">251W</span></p>
-                        <p>الكفاءة: <span id="panel3-efficiency">87%</span></p>
+                        <h4>Panel 3</h4>
+                        <p>Power: <span id="panel3-power">251W</span></p>
+                        <p>Efficiency: <span id="panel3-efficiency">87%</span></p>
                     </div>
                 </div>
-                
+
                 <div class="energy-flow">
-                    <h3>تدفق الطاقة</h3>
+                    <h3>Energy flow</h3>
                     <div class="flow-diagram">
                         <div class="flow-item">
                             <div class="flow-icon solar-icon">
                                 <i class="fas fa-sun"></i>
                             </div>
-                            <h4>الطاقة الشمسية</h4>
+                            <h4>Solar energy</h4>
                             <p id="solar-input">734W</p>
                         </div>
-                        
+
                         <div class="flow-arrow">→</div>
-                        
+
                         <div class="flow-item">
                             <div class="flow-icon battery-icon">
                                 <i class="fas fa-battery-three-quarters"></i>
                             </div>
-                            <h4>البطارية</h4>
+                            <h4>Battery</h4>
                             <p id="battery-level">78%</p>
                         </div>
-                        
+
                         <div class="flow-arrow">→</div>
-                        
+
                         <div class="flow-item">
                             <div class="flow-icon pump-icon">
                                 <i class="fas fa-tint"></i>
                             </div>
-                            <h4>المضخة</h4>
-                            <p id="pump-flow">12 ل/دق</p>
+                            <h4>Pump</h4>
+                            <p id="pump-flow">12 L/min</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="system-controls" style="text-align: center; margin-top: 2rem;">
-                    <button class="btn btn-primary"        style="background-color: #716b19; color: black;"  onclick="toggleSolarSystem()" id="system-toggle">تشغيل النظام</button>
-                    <button class="btn btn-primary"        style="background-color: #90ee90; color: black;"  onclick="optimizeSystem()">تحسين الأداء</button>
+                    <button class="btn btn-primary"        style="background-color: #716b19; color: black;"  onclick="toggleSolarSystem()" id="system-toggle">Start system</button>
+                    <button class="btn btn-primary"        style="background-color: #90ee90; color: black;"  onclick="optimizeSystem()">Optimize performance</button>
                 </div>
             </div>
         </div>
@@ -296,27 +296,27 @@
     <!-- Environmental Impact -->
     <section id="sustainability" class="environmental-impact">
         <div class="container">
-            <h2 class="section-title">الأثر البيئي والاستدامة</h2>
+            <h2 class="section-title">Environmental Impact & Sustainability</h2>
             <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
-                هذا النظام يساهم في حماية البيئة وتوفير الطاقة بطريقة مستدامة
+                This system helps protect the environment and provides energy sustainably.
             </p>
-            
+
             <div class="impact-stats">
                 <div class="impact-card">
                     <div class="impact-number">2.5</div>
-                    <p>طن CO₂ يتم توفيرها سنوياً</p>
+                    <p>tonnes of CO₂ saved annually</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">85%</div>
-                    <p>انخفاض في تكلفة الطاقة</p>
+                    <p>reduction in energy costs</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">3600</div>
-                    <p>كيلوواط/ساعة توليد سنوي</p>
+                    <p>kWh generated annually</p>
                 </div>
                 <div class="impact-card">
                     <div class="impact-number">15</div>
-                    <p>سنة العمر الافتراضي للنظام</p>
+                    <p>years of system service life</p>
                 </div>
             </div>
         </div>
@@ -325,40 +325,40 @@
     <!-- Sustainability Features -->
     <section class="sustainability-features">
         <div class="container">
-            <h2 class="section-title">المميزات المستدامة</h2>
+            <h2 class="section-title">Sustainability features</h2>
             <div class="feature-grid">
                 <div class="feature-card">
                     <i class="fas fa-leaf" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                    <h3>طاقة متجددة 100%</h3>
-                    <p>يعتمد النظام بالكامل على الطاقة الشمسية النظيفة والمتجددة</p>
+                    <h3>100% renewable energy</h3>
+                    <p>The system runs entirely on clean, renewable solar energy.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <i class="fas fa-recycle" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                    <h3>إعادة التدوير</h3>
-                    <p>جميع مكونات النظام قابلة لإعادة التدوير في نهاية دورة الحياة</p>
+                    <h3>Recycling</h3>
+                    <p>All system components can be recycled at the end of their service life.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <i class="fas fa-water" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                    <h3>ترشيد استهلاك المياه</h3>
-                    <p>نظام ذكي لتحسين استخدام المياه وتقليل الهدر</p>
+                    <h3>Water conservation</h3>
+                    <p>A smart system that improves water use and reduces waste.</p>
                 </div>
-                
+
 
                 <div class="circuit-diagram" style="background: #328c62; border-radius: 15px; margin: 2rem auto; padding: 2rem; text-align: center;">
-                <h3 style="color: white; margin-bottom: 1rem;"> مكونات المشروع </h3>
-                <img src="images_project/circuit-diagram_pice.png" 
-                    alt="مخطط الدائرة الإلكترونية"
+                <h3 style="color: white; margin-bottom: 1rem;"> Project components </h3>
+                <img src="../../project/images_project/circuit-diagram_pice.png"
+                    alt="Circuit diagram"
                     style="display: block; margin: 0 auto; width: 100%; height: 100%; max-height: 400px; border-radius: 15px; object-fit: contain;">
                 </div>
 
 
 
                 <div class="circuit-diagram" style="background: #328c62; border-radius: 15px; margin: 2rem auto; padding: 2rem; text-align: center;">
-                <h3 style="color: white; margin-bottom: 1rem;"> مخطط الدائرة الإلكترونية </h3>
-                <img src="images_project/circuit-diagram-2.png" 
-                    alt="مخطط الدائرة الإلكترونية"
+                <h3 style="color: white; margin-bottom: 1rem;"> Circuit diagram </h3>
+                <img src="../../project/images_project/circuit-diagram-2.png"
+                    alt="Circuit diagram"
                     style="display: block; margin: 0 auto; width: 100%; height: 100%; max-height: 400px; border-radius: 15px; object-fit: contain;">
                 </div>
 
@@ -368,13 +368,13 @@
 
 
                 <div class="circuit-diagram" style="background: #328c62; border-radius: 15px; margin: 2rem auto; padding: 2rem; text-align: center; width: 95%; max-width: 1200px;">
-                <h3 style="color: white; margin-bottom: 1rem;">فيديو لعمل المشروع</h3>
-                
+                <h3 style="color: white; margin-bottom: 1rem;">Project video</h3>
+
                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px;">
-                    <iframe 
-                        src="https://drive.google.com/file/d/1md72mgknYK41I24s32O6O4D5jf7xrxQv/preview" 
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-                        allow="autoplay; fullscreen" 
+                    <iframe
+                        src="https://drive.google.com/file/d/1md72mgknYK41I24s32O6O4D5jf7xrxQv/preview"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        allow="autoplay; fullscreen"
                         allowfullscreen>
                     </iframe>
                 </div>
@@ -393,10 +393,10 @@
             <div class="award-badge">
                 <i class="fas fa-trophy"></i>
             </div>
-            <h2>المركز الأول - مسابقة الجامعة 2023</h2>
-            <p style="font-size: 1.3rem; margin: 1rem 0;">جامعة قاصدي مرباح ورقلة</p>
+            <h2>1st Place – University Competition 2023</h2>
+            <p style="font-size: 1.3rem; margin: 1rem 0;">Kasdi Merbah University of Ouargla</p>
             <p style="font-size: 1.1rem; opacity: 0.9;">
-                تم اختيار هذا المشروع كأفضل مشروع مبتكر في مجال الطاقة المتجددة والتنمية المستدامة
+                This project was selected as the top innovation in renewable energy and sustainable development.
             </p>
         </div>
     </section>
@@ -404,10 +404,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 صلاح الدين بن التواتي. جميع الحقوق محفوظة.</p>
+            <p>&copy; 2024 Salah Eddine Benettouati. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>
